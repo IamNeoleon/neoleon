@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Спасибо за покупку!</title>
+   <!-- <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231005225856"
+/> -->
+
+   <link rel="stylesheet" href="css/style.min.css?_v=20231005225856">
+</head>
+<body>
+      <div class="modal">
+         <div class="modal__body">
+            <div class="modal__info">
+               <div class="modal__icon">
+                  <img src="img/modal-check.svg" alt="modal check">
+               </div>
+               <div class="modal__title">Успешно оформлено!</div>
+               <div class="modal__text">Ваш заказ успешно оформлен! Спасибо что выбрали именно нас.</div>
+            </div>
+            <a href="index.html" class="modal__btn icon-arrow">Вернуться на главную</a>
+         </div>
+         <div class="modal__bg">
+            <picture><source srcset="img/modal.webp" type="image/webp"><img src="img/modal.jpg" alt="modal bg"></picture>
+         </div>
+      </div>
+   <script>
+      window.onload = function () {
+         console.log("Worked")
+         document.querySelector('.modal__body').classList.add('active');
+      }
+   </script>
+</body>
+</html>

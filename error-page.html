@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Страница не найдена</title>
+   <!-- <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231005225856"
+/> -->
+
+   <link rel="stylesheet" href="css/style.min.css?_v=20231005225856">
+</head>
+<body>
+   <div class="error">
+      <div class="error__body">
+         <div class="error__title">404</div>
+         <div class="error__text">Запрашиваемая страница не найдена</div>
+         <a href="index.html" class="error__btn icon-arrow">
+            Вернуться на главную
+         </a>
+      </div>
+      <div class="error__img">
+         <img src="" alt="" srcset="" id="background-img">
+      </div>
+   </div>
+   <script>
+      const backgrounds = [
+         '01.jpg',
+         '02.jpg'
+      ]
+      const randomIndex = Math.floor(Math.random() * backgrounds.length);
+      const imgElement = document.getElementById('background-img');
+      imgElement.src = 'img/error-page/' + backgrounds[randomIndex];
+   </script>
+</body>
+</html>
